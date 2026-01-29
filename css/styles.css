@@ -3,11 +3,6 @@
     src: '/fonts/VAG_Rounded_Regular.ttf';
 }
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 :root {
     --t-font: 'vag rounded';
     --p-font: 'maax';
@@ -274,5 +269,17 @@ input[type="submit"] {
 
     #contact-button {
         width: 65vw;
+    }
+
+    /* contact.html */
+    textarea {
+        height: 15em;
+        width: 30em;
+    }
+
+    input[type="submit"] {
+        width: 30vw;
+        height: 5vh;
+        margin-bottom: 3vh;
     }
 }
