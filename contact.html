@@ -26,8 +26,13 @@
                 <p>Vul dan onderstaand tekstvak in en druk op verstuur, hierdoor wordt er een automatische mail aangemaakt die je naar ons kan versturen.</p>
             </section>
             <form method="post" action="mailto:contact@devops8.nl" enctype="text/plain">
-                <label for="contact">Contact Formulier</label>
-                <textarea id="contact" name="contact" rows="10" cols="100"></textarea>
+                <label>Contact Formulier</label>
+                <label for="name">Naam</label>
+                <input type="text" id="name" required>
+                <label for="emailaddress">Emailadres</label>
+                <input type="email" id="emailaddress" required>
+                <label for="message">Vraag</label>
+                <textarea id="message" name="contact" rows="10" cols="100" required></textarea>
                 <input type="submit" value="submit">
             </form>
         </div>
