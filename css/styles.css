@@ -32,6 +32,8 @@ body {
     height: 10vh;
     background-color: rgb(0,47,92);
     list-style: none;
+    margin-bottom: 2vh;
+    width: 90vw;
 }
 
 li > a:hover {
@@ -145,6 +147,8 @@ li > a {
     width: 33vw;
     height: 33vh;
     border: 2px solid gray;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 #joshua-text h1 {
@@ -203,6 +207,181 @@ input[type="submit"] {
     font-size: 3vh;
 }
 
+/* mylan-rossel.html */
+#mylan-body {
+    margin: 0;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#Body_myl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Body_myl::before {  /*Styling for background*/
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.redd.it/laxq3hqi3kp31.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(30px);
+    z-index: -1;
+}
+
+#Header_myl,
+#Aside_myl,
+#Main_myl {
+    display: flex;
+}
+
+.text-margin {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#Header_myl {                       /*Styling for header*/
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 2.7vw;
+    letter-spacing: 0.7em;
+    word-spacing: 0.5em;
+    color: rgb(184, 184, 184);
+    background-color: rgba(69, 11, 11, 0.9);
+    border-radius: 70px;
+    min-width: 95%;
+}
+
+#Header_text {
+    margin: 10px;
+}
+
+#Nav_myl {                  /*Styling for navigation*/
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    margin-top: 10px;
+    background-color: rgba(133, 133, 133, 0.7);
+    border-radius: 10px;
+    width: 95%;
+}
+
+.home:link {
+    justify-self: start;
+    border-radius: 10px;
+    font-weight: bold;
+    padding-left: 7px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin-right: 15vw;
+    background-color: rgb(104, 4, 4);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.home:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.home:hover {
+    color: rgb(169, 169, 169);
+    text-decoration: underline;
+}
+
+.home:active {
+    color: rgb(69, 69, 69);
+    text-decoration: underline;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    min-width: 50vw;
+    max-width: 60vw;
+    padding: 5px 5px;
+    text-align: center;
+    background-color: rgb(81, 15, 15);
+    border-radius: 20px;
+}
+
+
+.linkstyle:link {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.linkstyle:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.linkstyle:hover {
+    color: rgb(169, 169, 169);
+    text-decoration: underline;
+}
+
+.linkstyle:active {
+    color: rgb(69, 69, 69);
+    text-decoration: underline;
+}
+
+#content-bottom {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 95%;
+}
+
+#Aside_myl {                    /*Styling for the sidebar*/
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: rgb(137, 137, 137, 0.7);
+    border-radius: 20px;
+    color: rgb(104, 4, 4);
+    padding-top: 20px;
+    width: 300px;
+}
+
+#Profilepicture_myl {
+    align-self: center;
+    border-radius: 60px;
+    width: 70%;
+    border: solid 5px rgba(83, 83, 83, 0.6);
+}
+
+#Main_myl {                 /*Styling for the main content*/
+    background-color: rgba(83, 83, 83, 0.6);
+    color: rgb(180, 180, 180);
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.marginbottom {
+    margin-bottom: 5px;
+}
+
+.margintop {
+    margin-top: 7px;
+}
+
+#bottom-page {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
 /* media queries index */
 @media screen and (orientation: landscape) and (max-width: 932px) and (min-width: 480px) {
 
@@ -217,8 +396,34 @@ input[type="submit"] {
         padding-top: 2vh;
     }
 
+    /* contact.html */
+
     #contact-button {
         width: 35vw;
+    }
+
+    /* joshua.html */
+    #joshua-grid {
+        grid-template-rows: 33vh 35vh 33vh;
+    }
+
+    #ace-4 {
+        display: none;
+    }
+
+    #ace-5 {
+        display: none;
+    }
+
+    #joshua-text {
+        grid-column: 1 / 4;
+        width: 100vw;
+        flex-flow: row wrap;
+        gap: 1vw;
+    }
+
+    #joshua-text h2, #joshua-text p, #joshua-text ul {
+        font-size: 3vh;
     }
 }
 
@@ -230,6 +435,7 @@ input[type="submit"] {
     #menu {
         flex-flow: column nowrap;
         height: 100vh;
+
     }
 
     #menu li {
@@ -281,5 +487,85 @@ input[type="submit"] {
         width: 30vw;
         height: 5vh;
         margin-bottom: 3vh;
+    }
+
+    /* joshua.html */
+
+    #joshua-grid {
+        grid-template-rows: 33vh 40vh 33vh;
+    }
+
+    #ace-2, #ace-3, #ace-5, #ace-6, #ace-7, #ace-8 {
+        display: none;
+    }
+
+    #ace-1 {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    #joshua-text {
+        grid-row: 2 / 3;
+        grid-column: 1 / 4;
+        width: 100vw;
+        height: 40vh;
+        display: block;
+    }
+
+    #ace-4 {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+}
+
+/* media queries Mylan */
+@media (max-width: 569px) {     /*First breakpoint*/
+    #Header_myl {
+        border-radius: 20px;
+    }
+
+    #Nav_myl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(133, 133, 133, 0.7);
+        border-radius: 10px;
+        padding: 10px;
+        gap: 10px;
+        margin-bottom: 0;
+        width: 85%;
+    }
+
+    .home:link {
+        display: flex;
+        margin-right: 0vw;
+    }
+
+    .name {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #Aside_myl {
+        width: 95%;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    #Main_myl {
+        width: 95%;
+        margin: 0;
+    }
+
+    #content-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+} 
+
+@media (max-width: 400px) {     /*Second breakpoint*/
+    #Header_myl{
+        display: none;
     }
 }
