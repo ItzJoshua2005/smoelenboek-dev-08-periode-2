@@ -1,0 +1,143 @@
+body {
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 50px;
+    background-color: grey;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav button {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: #383838;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+nav button:hover {
+    background-color: darkgrey;
+}
+
+#logo {
+    padding-left: 0px;
+    width: 250px;
+}
+
+h1, img.pfp {
+    display: block;
+    margin: 5px auto;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: Impact;
+}
+
+img.pfp {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 3px solid transparent;
+}
+
+
+img.pfp:hover {
+    transform: scale(1.1);
+    border-color: white;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+}
+
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content img.main-photo {
+    display: block;
+    margin: 20px auto;
+}
+
+.content ul {
+    display: inline-block;
+    text-align: left;
+    padding-left: 0;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    list-style-position: inside;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: darkgrey;
+    padding: 8px;
+}
+
+.content ul ul {
+    padding-top: 2px;
+    display: block;
+    margin-top: 0   px;
+    padding-left: 20px;
+    list-style-position: inside;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    background-color: #222;
+    color: #aaa;
+    padding: 21.5px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0 0 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+.footer-btn img {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.footer-btn img:hover {
+    transform: scale(1.15);
+}
+
+.btn {
+  background-color: lightgray;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: darkgray;
+}
