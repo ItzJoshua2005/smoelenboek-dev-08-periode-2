@@ -884,24 +884,24 @@ img.JurPfp:hover {
 
 /* media queries dylan verbunt */
 @media only screen and (max-width: 900px) {
-    p {
+    #dyllan-p {
         color: white;
         text-align: center;
         font-size: 3vw;
     }
 
-    h1 {
+    #dyllan-h1 {
         color: white;
         text-align: center;
         font-size: 4vw;
     }
 
-    h2 {
+    #dyllan-h2 {
         text-align: center;
         font-size: 3vw;
     }
 
-    body {
+    #dyllan-body {
         background-color: #280028;
         font-family: "Blackadder ITC";
         font-size: 100%;
@@ -929,7 +929,7 @@ img.JurPfp:hover {
     font-size: 13px;
 }
 
-body {
+#dyllan-body {
     font-family: Arial;
     background-color: #280028;
 }
@@ -958,24 +958,24 @@ body {
 /* @media is voor responcive design */
 
 @media only screen and (max-width: 650px) {
-    p {
+    #dyllan-p {
         color: white;
         text-align: center;
         font-size: 2vw;
     }
 
-    h1 {
+    #dyllan-h1 {
         color: white;
         text-align: center;
         font-size: 3vw;
     }
 
-    h2 {
+    #dyllan-h2 {
         text-align: center;
         font-size: 2vw;
     }
 
-    body {
+    #dyllan-body {
         background-color: #280028;
         font-family: "Blackadder ITC";
         font-size: 200%;
